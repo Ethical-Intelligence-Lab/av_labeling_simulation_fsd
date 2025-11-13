@@ -977,6 +977,25 @@ const DrivingSimulator = () => {
         setIsComplete(true);
         clearInterval(timerInterval);
         
+        console.log('=== SIMULATION DATA ===');
+        console.log('Mode by second:', simulationDataRef.current.modeBySecond);
+        console.log('White blocks hit:', simulationDataRef.current.whiteBlocksHit);
+        console.log('Failure-lane hits:', simulationDataRef.current.failureLaneHits);
+        console.log('Mode by unit length:', simulationDataRef.current.modeByUnit.length);
+        console.log('Collision events:', simulationDataRef.current.collisionEvents.length);
+        console.log('Final score:', simulationDataRef.current.finalScore);
+        console.log('======================');
+
+        if (typeof Qualtrics !== 'undefined') {
+          Qualtrics.SurveyEngine.setEmbeddedData('sim_mode_by_second', JSON.stringify(simulationDataRef.current.modeBySecond));
+          Qualtrics.SurveyEngine.setEmbeddedData('sim_white_blocks_hit', simulationDataRef.current.whiteBlocksHit);
+          Qualtrics.SurveyEngine.setEmbeddedData('sim_failure_lane_hits', simulationDataRef.current.failureLaneHits);
+          Qualtrics.SurveyEngine.setEmbeddedData('sim_mode_by_unit', JSON.stringify(simulationDataRef.current.modeByUnit));
+          Qualtrics.SurveyEngine.setEmbeddedData('sim_collision_events', JSON.stringify(simulationDataRef.current.collisionEvents));
+          Qualtrics.SurveyEngine.setEmbeddedData('sim_final_score', simulationDataRef.current.finalScore);
+          console.log('Data saved to Qualtrics embedded data');
+        }
+
         // Remove all blocks immediately
         finalBlocks.forEach(block => {
           scene.remove(block);
