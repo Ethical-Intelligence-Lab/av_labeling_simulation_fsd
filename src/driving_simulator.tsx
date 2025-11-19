@@ -986,7 +986,7 @@ const DrivingSimulator = () => {
               You are about to watch a driving simulation of <strong>AEON {labelCondition}</strong>. <strong><br></br>You do not need to interact with the simulation</strong> — simply observe how {labelCondition} behaves, while you also receive <strong>smartphone notifications</strong>
             </p>
             <p style={{ marginBottom: '15px' }}>
-              Your score starts at <strong>500 points</strong> and decreases by <strong>10 points</strong> for each second that passes or each obstacle the vehicle hits. The score is displayed in the top right during the simulation.
+              Your score starts at <strong>1000 points</strong> and decreases by <strong>10 points</strong> for each second that passes or each obstacle the vehicle hits. The score is displayed in the top right during the simulation.
             </p>
             <p style={{ marginBottom: '15px' }}>
               The simulation will last <strong>45 seconds</strong>. 
