@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/av_labeling_simulation_fsd/static/css/main.fdbcbbd2.css",
-    "main.js": "/av_labeling_simulation_fsd/static/js/main.9a5fee8c.js",
+    "main.js": "/av_labeling_simulation_fsd/static/js/main.fa2dc5ef.js",
     "index.html": "/av_labeling_simulation_fsd/index.html",
     "main.fdbcbbd2.css.map": "/av_labeling_simulation_fsd/static/css/main.fdbcbbd2.css.map",
-    "main.9a5fee8c.js.map": "/av_labeling_simulation_fsd/static/js/main.9a5fee8c.js.map"
+    "main.fa2dc5ef.js.map": "/av_labeling_simulation_fsd/static/js/main.fa2dc5ef.js.map"
   },
   "entrypoints": [
     "static/css/main.fdbcbbd2.css",
-    "static/js/main.9a5fee8c.js"
+    "static/js/main.fa2dc5ef.js"
   ]
 }
